@@ -4,9 +4,9 @@
 这是为了支持appium.io文档的生成，不要使用下划线`---`的方式来创建标题。
 不要使用第一级标题或者 `===` 底线方式来创建标题（其中文件夹名字被用于第一级标题）
 
-### 第二级标题
+### 小标题
 
-`###` 用于第二级标题。
+`###` 用于小标题。
 
 ### 普通标题
 
@@ -15,7 +15,7 @@
 
 ### 分隔线
 
-不要使用分隔线例如 `--` 或者 `---`。 这会使 Slate 混乱.
+不要使用分隔线例如 `--` 或者 `---`。 这会使 Slate 混乱。
 
 ### 链接
 
@@ -31,7 +31,7 @@
 
 `[link text](filename.md)`
 
-链接到文档的内部, 使用 `#` 来标记 Slate 链接.
+链接到文档的内部, 使用 `#` 来标记 Slate 链接。
 
 `[go direct to json](filename.md#json-wire-protocol-server-extensions)`
 
@@ -49,7 +49,7 @@
       ```
 #### 发布
   发布文档请在appium.io中查看[api-docs](https://github.com/appium/api-docs)和
-  在[appium.io](https://github.com/appium/appium.io)中查看.
+  在[appium.io](https://github.com/appium/appium.io)中查看。
 
 
   
