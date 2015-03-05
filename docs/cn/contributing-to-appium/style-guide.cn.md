@@ -72,7 +72,7 @@
     ```
 
 
-*   左花括号应该和 `function`, `if` 等 写在同一行, `else` 被夹在两个花括号中间。
+*   左花括号应该和 `function`, `if` 等 写在同一行， `else` 被夹在两个花括号中间。
 
     ```js
     if (foo === bar) {
@@ -142,7 +142,8 @@
     }
     ```
 
-		except in the case of short-circuiting to a callback in the event of an error（求翻译）
+	除了出错后直接调用回调函数（callback）处理错误（error）的语句
+
     ```javascript
     if (err) return cb(err);
     ```
