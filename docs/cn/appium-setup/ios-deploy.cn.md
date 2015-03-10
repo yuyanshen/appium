@@ -1,4 +1,4 @@
-# 部署ios app 到手机上
+# 部署iOS app 到手机上
 
 准备在真机上执行appium测试, 需要如下准备：
 
@@ -18,7 +18,7 @@ xcodebuild [-project projectname] [-target targetname ...]
 
 ```
 CODE_SIGN_IDENTITY (Code Signing Identity)
-    介绍: 标识符，指定一个签名.
+    介绍: 标识符，指定一个签名。
     例如: iPhone Developer
 ```
 
@@ -51,6 +51,7 @@ clone成功的话， 执行 ``make fruitstrap``
 ```
 
 在node服务启动前fruitstrap进行需要被结束， 一个方法是扫描fruitstrap的输出来得知app完成启动。 有一个有效的方法是通过一个Rakefile 和一个 ``go_device.sh`` 脚本：
+
 
 ```
 bundle exec rake ci:fruit_deploy_app | while read line ; do 
