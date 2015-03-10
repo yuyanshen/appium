@@ -1,5 +1,6 @@
 ## uiautomator UiSelector
 
+<<<<<<< HEAD
 Appium可以使用 [UiSelectors](http://developer.android.com/tools/help/uiautomator/UiSelector.html)
 进行元素查找，同时也支持[UiScrollable](http://developer.android.com/tools/help/uiautomator/UiScrollable.html)
 .
@@ -10,14 +11,28 @@ Appium可以使用 [UiSelectors](http://developer.android.com/tools/help/uiautom
 
 
 找到第一个文本控件 (TextView) 。
+=======
+Appium可以使用 [UiSelectors](http://developer.android.com/tools/help/uiautomator/UiSelector.html).
+进行元素查找，同时也支持[UiScrollable](http://developer.android.com/tools/help/uiautomator/UiScrollable.html)
+.
+
+注意：根据索引( index )进行查找并不可靠，请使用实例( instance )代替. 下面的示范是用Ruby语言编写的、针对 api demo （这是一个 appium 测试用的应用）的实例.
+
+
+找到第一个文本控件( TextView )。
+>>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 ```ruby
 # ruby
 first_textview = find_element(:uiautomator, 'new UiSelector().className("android.widget.TextView").instance(0)');
 ```
 
+<<<<<<< HEAD
 根据文本 (text) 找到第一个元素。
 
+=======
+根据文本( text )找到第一个元素。
+>>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 ```ruby
 # ruby
@@ -41,4 +56,7 @@ scrollIntoView 对任何的 UiSelector 都可以执行滚动操作。
 element = find_element(:uiautomator, 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("WebView").instance(0));')
 element.text # "WebView"
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1

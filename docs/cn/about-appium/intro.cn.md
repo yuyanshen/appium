@@ -60,5 +60,11 @@ Appium 对 WebDriver 协议的扩展。当使用 Appium 的时候，你只需使
 
 ## Getting Started
 
+<<<<<<< HEAD
 
 恭喜！你现在有足够的知识来使用 Appium 了。  让我们回到 [getting started doc](/docs/cn/README.cn.md) 继续了解更加细节的需求和指南。
+=======
+恭喜！你现在有足够的知识来使用 Appium 了。 来我们回到 [getting started doc](/docs/cn/README.md) 继续了解更加
+细节的需求和指南。
+
+>>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
