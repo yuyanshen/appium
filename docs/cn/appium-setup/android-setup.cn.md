@@ -31,7 +31,7 @@
 ### 注意
 
 * Android具有硬件加速模拟器，但它有自己的局限性，如果想了解更多，请看这里
-  [page](/docs/en/appium-setup/android-hax-emulator.md).
+  [page](/docs/cn/appium-setup/android-hax-emulator.cn.md).
 * 如果你想运行Appium的测试，或者任何强大的命令，请将 `hw.battery=yes` 写入安卓模拟器的 `config.ini`文件中.
 * Selendroid 需要你APP中的如下权限:         
   `<uses-permission android:name="android.**permission.INTERNET"/>`,
