@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ## Appium 客户端库
-=======
-# Appium 客户端库
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 Appium 有对应以下语言的客户端库:
 
@@ -25,19 +21,11 @@ Appium 有对应以下语言的客户端库:
 [nuget]:          http://www.nuget.org/packages/Appium.WebDriver/
 [cocoapods]:      https://github.com/appium/selenium-objective-c
 
-<<<<<<< HEAD
 请注意：有些方法，比如 `endTestCoverage()` 目前不能提供完整支持。
 只有[这个问题](https://github.com/appium/appium/issues/2448)修复， 完整的覆盖率支持才会被添加。
 如果你一定要用这些方法，请先查看 Github 上关于 bindings 的文档。
 
 ### 锁定
-=======
-注意有些方法，比如 `endTestCoverage()` 目前还没有什么用。
-只有[这个问题](https://github.com/appium/appium/issues/2448)修复， 完整的覆盖率支持才会添加。
-如果你一定要用这些方法，请查看相应的文档。
-
-## 锁定
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 锁定屏幕
 
@@ -77,11 +65,7 @@ driver.LockDevice(3);
 [driver lockDeviceScreen:3];
 ```
 
-<<<<<<< HEAD
 ### 将 app 置于后台
-=======
-## 将 app 置于后台
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 把当前应用放到后台去
 
@@ -120,11 +104,7 @@ driver.BackgroundApp(5);
 [driver runAppInBackground:3];
 ```
  
-<<<<<<< HEAD
 ### 收起键盘
-=======
-## 收起键盘
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 收起键盘
 
@@ -163,10 +143,7 @@ driver.HideKeyboard("Done");
 // objective c
 [driver hideKeyboard];
 ```
-<<<<<<< HEAD
 
-=======
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 ### 启动 Activity
 
 在当前应用中打开一个 activity 或者启动一个新应用并打开一个 activity 。 *只能在 Android 上使用*
@@ -246,11 +223,7 @@ $this->openNotifications();
 [driver openNotifications];
 ```
 
-<<<<<<< HEAD
 ### 是否已经安装
-=======
-## 是否已经安装
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 检查应用是否已经安装
 
@@ -290,11 +263,7 @@ driver.IsAppInstalled("com.example.android.apis-");
 [driver isAppInstalled:@"com.example.android.apis-"];
 ```
 
-<<<<<<< HEAD
 ### 安装应用
-=======
-## 安装应用
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 安装应用到设备中去
 
@@ -333,11 +302,7 @@ driver.InstallApp("path/to/my.apk");
 [driver installAppAtPath:@"path/to/my.apk"];
 ```
 
-<<<<<<< HEAD
 ### 删除应用
-=======
-## 删除应用
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 从设备中删除一个应用
 
@@ -376,11 +341,7 @@ driver.RemoveApp("com.example.android.apis");
 [driver removeApp:@"com.example.android.apis"];
 ```
 
-<<<<<<< HEAD
 ### 摇晃 (Shake)
-=======
-## 摇晃 (Shake)
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 模拟设备摇晃
 
@@ -419,11 +380,7 @@ driver.ShakeDevice();
 [driver shakeDevice];
 ```
 
-<<<<<<< HEAD
 ### 关闭应用
-=======
-## 关闭应用
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 关闭应用
 
@@ -462,15 +419,9 @@ driver.CloseApp();
 [driver closeApp];
 ```
 
-<<<<<<< HEAD
 ### 启动 (Launch)
 
 根据服务关键字 (desired capabilities) 启动会话 (session) 。请注意这必须在设定 `autoLaunch=false` 关键字时才能生效。这不是用于启动指定的 app/activities ————你可以使用 `start_activity` 做到这个效果————这是用来继续进行使用了 `autoLaunch=false` 关键字时的初始化 (Launch) 流程的。
-=======
-## 启动 (Launch)
-
-根据服务关键字( desired capabilities )启动会话（ session ）。请注意这必须在设定 `autoLaunch=false` 关键字时才能生效。这不是用于启动指定的 app/activities --你可以使用 `start_activity` 做到这个效果。这是用来继续进行使用了 `autoLaunch=false` 关键字时的初始化（"启动"）流程的。
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 ```ruby
 # ruby
@@ -507,19 +458,12 @@ driver.LaunchApp();
 [driver launchApp];
 ```
 
-<<<<<<< HEAD
 ### 重置 (Reset)
 
 应用重置
 
  (翻译者注：相当于卸载重装应用) 
 
-=======
-## 重置 (Reset)
-
-应用重置
-
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 ```ruby
 # ruby
 reset
@@ -555,19 +499,12 @@ driver.ResetApp();
 [driver resetApp];
 ```
 
-<<<<<<< HEAD
 ### 可用上下文 (context)
 
 列出所有的可用上下文
 
 翻译备注：context可以理解为 可进入的窗口 。例如，对于原生应用，可用的context和默认context均为`NATIVE_APP`。详情可查看[对混合应用进行自动化测试](http://appium.io/slate/en/v1.3.4/?ruby#automating-hybrid-apps)
 
-=======
-## 可用上下文 (context)
-
-列出所有的可用上下文
-
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 ```ruby
 # ruby
 context_array = available_contexts
@@ -603,11 +540,7 @@ driver.GetContexts()
 NSArray *contexts = driver.allContexts;
 ```
 
-<<<<<<< HEAD
 ### 当前上下文 (context)
-=======
-## 当前上下文 (context)
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 列出当前上下文
 
@@ -646,11 +579,7 @@ driver.GetContext()
 NSString *context = driver.context;
 ```
 
-<<<<<<< HEAD
 ### 切换到默认的上下文 (context)
-=======
-## 切换到默认的上下文 (context)
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 将上下文切换到默认上下文
 
@@ -689,11 +618,7 @@ driver.SetContext();
 [driver setContext:nil];
 ```
 
-<<<<<<< HEAD
 ### 应用的字符串 (App Strings)
-=======
-## 应用的字符串 (App Strings)
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 获取应用的字符串
 
@@ -734,11 +659,7 @@ driver.GetAppStrings();
 [driver appStringsForLanguage:"@ru"];
 ```
 
-<<<<<<< HEAD
 ### 按键事件 (Key Event)
-=======
-## 按键事件 (Key Event)
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 给设备发送一个按键事件
 
@@ -778,16 +699,9 @@ NSError *err;
 [driver triggerKeyEvent:176 metastate:0 error:&err];
 ```
 
-<<<<<<< HEAD
 ### 当前 Activity
 
 获取当前 activity。只能在 Android 上使用
-=======
-## 当前 Activity
-
-只能在 Android 上使用
-获取当前 activity。
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 ```ruby
 # ruby
@@ -825,11 +739,7 @@ NSError *err;
 [driver currentActivity];
 ```
 
-<<<<<<< HEAD
 ### 触摸动作(TouchAction) / 多点触摸动作(MultiTouchAction)
-=======
-## 触摸动作(TouchAction) / 多点触摸动作(MultiTouchAction)
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 生成触摸动作的接口。这部分文档很快将会补充更多的内容进来。
 
@@ -897,11 +807,7 @@ action.Press(el, 10, 10).Release();
 action.Perform ();
 ```
 
-<<<<<<< HEAD
 ### 滑动(Swipe)
-=======
-## 滑动(Swipe)
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 模拟用户滑动
 
@@ -947,15 +853,9 @@ $this->swipe(75, 500, 75, 0, 800);
 todo: c#
 ```
 
-<<<<<<< HEAD
 ### 捏 (Pinch) 
 
 捏屏幕 (双指往内移动来缩小屏幕) 
-=======
-## 捏（Pinch）
-
-捏屏幕（双指往内移动来缩小屏幕）
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 ```ruby
 # ruby
@@ -1013,15 +913,9 @@ $this->pinch($el);
 driver.Pinch(25, 25)
 ```
 
-<<<<<<< HEAD
 ### 放大 (Zoom) 
 
 放大屏幕 (双指往外移动来放大屏幕) 
-=======
-## 放大（Zoom）
-
-放大屏幕（双指往外移动来放大屏幕）
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 ```ruby
 # ruby
@@ -1080,11 +974,7 @@ $this->zoom($el);
 driver.Zoom(100, 200);
 ```
 
-<<<<<<< HEAD
 ### 滑动到 (Scroll To) 
-=======
-### 滑动到（Scroll To）
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 滑动到某个元素。
 
@@ -1125,11 +1015,7 @@ $this->scroll($els[count($els) - 1], $els[0]);
 todo: csharp
 ```
 
-<<<<<<< HEAD
 ### 拉出文件 (Pull File) 
-=======
-## 拉出文件（Pull File）
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 从设备中拉出文件
 
@@ -1164,11 +1050,7 @@ $this->pullFile('Library/AddressBook/AddressBook.sqlitedb');
 driver.PullFile("Library/AddressBook/AddressBook.sqlitedb");
 ```
 
-<<<<<<< HEAD
 ### 推送文件(Push file)
-=======
-## 推送文件(Push file)
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 推送文件到设备中去
 
@@ -1213,13 +1095,8 @@ driver.PushFile("/data/local/tmp/file.txt", "some data for the file");
 ### 设置
 
 
-<<<<<<< HEAD
 从这里你可以获取/设置 appium 的服务器设置。
 想知道它如何工作，以及它支持哪些设置，请查看[关于设置的文档](/docs/en/advanced-concepts/settings.cn.md)
-=======
-从这里你可以找到获取/设置 appium 系统设置的示例代码。
-想知道它如何工作，以及它支持哪些设置，请查看[关于设置的文档](/docs/en/advanced-concepts/settings.md)
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 ```ruby
 current_settings = get_settings
@@ -1255,12 +1132,7 @@ Dictionary<String, Object>settings = driver.GetSettings();
 driver.IgnoreUnimportantViews(true);
 ```
 
-<<<<<<< HEAD
 ### Appium 桌面应用
-=======
-
-## Appium 桌面应用
->>>>>>> d611d3e17027bbba996837e2c3cb0fa8ef5a53c1
 
 Appium 的桌面应用支持 OS X 和 Windows.
 
