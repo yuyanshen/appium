@@ -10,7 +10,9 @@ Appium提供了在一台设备上启动多个Android会话的方案，而这个�
 - `--chromedriver-port` chromedriver端口（当使用了webviews或者chrome）
 - `--selendroid-port` selendroid端口（当使用了selendroid）
 
-更多参数的解释详见 [here](../writing-running-appium/caps.md).
+
+更多参数的解释详见 [here](../writing-running-appium/caps.cn.md)。
+
 
 如果我们有两台设备，设备ID分别为43364和32456，我们应该用下面的命令启动来两个不同的Appium服务：
 
@@ -25,6 +27,5 @@ Appium提供了在一台设备上启动多个Android会话的方案，而这个�
 ### iOS并发测试
 
 不幸的是，IOS不能进行本地并发测试。跟Android不一样，IOS在同一时间只能启动一个版本的模拟器来运行多个测试。
-
 如果你想在IOS上进行并发测试，你需要用到Sauce。只需上传你的Appium测试脚本到Sauce，它就可以按照你的设置执行多个IOS或Android的并发测试。在Sauce上执行测试的更多信息，详见[here](https://docs.saucelabs.com/tutorials/appium/)。
 

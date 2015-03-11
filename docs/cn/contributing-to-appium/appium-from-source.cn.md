@@ -110,8 +110,8 @@ emulator -avd <MyAvdName>
 ```
 
 ### 运行测试集
-首先，看看我们的文档[一般运行测试情况下](/docs/cn/writing-running-appium/running-tests.cn.md) 
-然后，确保你的环境在对应的平台上已经搭建好了且与你所期望的那样。
+首先，看看我们的文档[普通情况下执行测试](/docs/cn/writing-running-appium/running-tests.cn.md) ，
+然后确保你的环境在对应的平台上已经搭建好了且与你所期望的那样。
 
 当你的环境搭建好了之后并且你的代码是最新的，你可以通过以下的方式来运行单元测试:
 
