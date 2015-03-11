@@ -6,7 +6,7 @@
 
 ## 衍合（Rebasing）
 
-每个 pull 请求中的提交（commits）必须包括 [逻辑的变化](https://github.com/appium/appium/pull/920#issuecomment-21588553)。
+每个 pull 请求中的提交（commits）必须包括 [logical changes](https://github.com/appium/appium/pull/920#issuecomment-21588553)。
 如果有多个作者，确认每个作者有自己的提交。最好不要修改作者信息。
 合并（merge）提交必须从 pull 请求中 rebase 。
 
@@ -40,7 +40,7 @@
 ## 风格注意点
 
 *   使用两个空格来缩进, *不要使用 tabs*
-*   在运算符两边，分别添加一个空格
+*   在运算符两边，分别添加一个空格：
 
     ```js
     var x = 1;
@@ -50,7 +50,7 @@
     var x=1;
     ```
 
-*   在 lists, objects, function calls 等中，逗号和冒号后面需要添加一个空格
+*   在 lists, objects, function calls 等中，逗号和冒号后面需要添加一个空格：
 
     ```js
     var x = myFunc("lol", {foo: bar, baz: boo});
@@ -61,7 +61,7 @@
     ```
 
 *   代码语句一般以分号结尾
-*   以逗号开头
+*   以逗号开头：
 
     ```js
     var x = {
@@ -72,7 +72,7 @@
     ```
 
 
-*   左花括号应该和 `function`, `if` 等 写在同一行， `else` 被夹在两个花括号中间。
+*   左花括号应该和 `function`, `if` 等 写在同一行， `else` 被夹在两个花括号中间：
 
     ```js
     if (foo === bar) {
@@ -126,7 +126,7 @@
             "than 79 characters so I broke it up, woo");
     ```
 
-*   注释需要和上一行代码左对齐
+*   注释需要和上一行代码左对齐：
 
     ```js
     if (foo === 5) {
@@ -148,7 +148,7 @@
     if (err) return cb(err);
     ```
 
-*   通过拓展原型，来创建子类
+*   通过拓展原型，来创建子类：
 
     ```js
     var _ = require('underscore');
@@ -170,7 +170,7 @@
     _.extend(SubClass.prototype, SuperClass.prototype);
     ```
 
-*   函数定义中，最后使用回调函数
+*   函数定义中，最后使用回调函数：
 
     ```js
     var foo = function (arg1, arg2, cb) {
@@ -178,7 +178,7 @@
     };
     ```
 
-*   使用变量来定义函数
+*   使用变量来定义函数：
 
     ```js
     var myFunc = function (a, b, c) {};
@@ -188,7 +188,7 @@
     function myFunc (a, b, c) {}
     ```
 
-*   变量名应该是驼峰式大小写风格:
+*   变量名应该是驼峰式大小写风格：
 
     ```js
     var myVariable = 42;
@@ -198,7 +198,7 @@
     var my_variable = 42;
     ```
 
-*   检查是否有未定义的变量
+*   检查是否有未定义的变量：
 
     ```js
     typeof myVariable === "undefined"
