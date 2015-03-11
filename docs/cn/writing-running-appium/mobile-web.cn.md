@@ -174,7 +174,7 @@ class ContextTests extends PHPUnit_Extensions_AppiumTestCase
 
 需要做的准备:
 
-*  确认Chrome已经安装在了你的真机或模拟器上 (应用的包名是`com.android.chrome`) .在不编译Chromium的情况下, 不可能得到模拟器上的x86版本的chrome, 你可以运行一个ARM的模拟器然后从真机上获取一个Chrome的APK安装在模拟器上.
+*  确认Chrome已经安装在了你的真机或模拟器上 (应用的包名是`com.android.chrome`) 。在不编译Chromium的情况下, 不可能得到模拟器上的x86版本的chrome，你可以运行一个ARM的模拟器然后从真机上获取一个Chrome的APK安装在模拟器上。
 *  如果你是使用[NPM](https://www.npmjs.org/package/appium)下载的，
 或者是在[.app](https://github.com/appium/appium-dot-app)运行的话，那你不需要其他额外的工作。如果你是使用源码运行，`reset`会下载ChromeDriver并放在`build`。 
 使用 `--chromedriver-version` 选项可以指定chromedriver的版本 (例如 `./reset.sh --android --chromedriver-version 2.8`)，
