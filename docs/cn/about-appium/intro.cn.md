@@ -6,7 +6,7 @@ Appium 是一个自动化测试开源工具，支持 iOS 平台和 Android 平�
 
 重要的是，Appium 是一个跨平台的工具：它允许测试人员在不同的平台（iOS，Android）使用同一套API来写自动化测试脚本，这样大大增加了 iOS 和 Android 测试套件间代码的复用性。
 
-想知道 Appium 如何支持平台，版本和自动化形态的详细信息，请参见[platform support doc](platform-support.cn.md)。
+想知道 Appium 如何支持平台，版本和自动化形态的详细信息，请参见[platform support doc](/docs/en/appium-setup/platform-support.cn.md)。
 
 ## Appium 的理念
 
