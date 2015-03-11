@@ -26,12 +26,12 @@
 ### （运行Appium Android 测试）
 
 在Linux上运行，启动一个API大于等于level17的AVD。 在源文件目录下运行 (`appium`) 在安装好 NPM, 或者 `node`。如果你选择的是从源代码方式运行。
-参照 [server documentation](/docs/en/writing-running-appium/server-args.md) 来了解所有命令和参数。
+参照 [server documentation](/docs/cn/writing-running-appium/server-args.cn.md) 来了解所有命令和参数。
 
 ### 注意
 
 * Android 加速模拟器需要存在，它有自己的局限性，如果想了解更多，请看这里
-  [page](/docs/en/appium-setup/android-hax-emulator.md)。
+  [page](/docs/cn/appium-setup/android-hax-emulator.cn.md)。
 * 如果你想运行任何Appium的测试，或者任何强大的命令，确保你的 `hw.battery=yes` 在 AVD's `config.ini`文件中。
 * Selendroid 需要你APP中的如下权限：
   `<uses-permission android:name="android.**permission.INTERNET"/>`,

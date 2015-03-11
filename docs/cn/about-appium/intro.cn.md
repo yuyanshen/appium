@@ -6,7 +6,7 @@ Appium 是一个自动化测试开源工具，支持 iOS 平台和 Android 平�
 
 重要的是，Appium 是一个跨平台的工具：它允许测试人员在不同的平台（iOS，Android）使用同一套API来写自动化测试脚本，这样大大增加了 iOS 和 Android 测试套件间代码的复用性。
 
-想知道 Appium 如何支持平台，版本和自动化形态的详细信息，请参见[platform support doc](platform-support.cn.md)。
+想知道 Appium 如何支持平台，版本和自动化形态的详细信息，请参见[platform support doc](/docs/cn/appium-setup/platform-support.cn.md)。
 
 ## Appium 的理念
 
@@ -43,7 +43,7 @@ Appium 的核心是一个 web 服务器，它提供了一套 REST 的接口。�
 自动化始终围绕一个session进行，客户端初始化一个seesion（会话）来与服务端交互，不同的语言有不同的实现方式，但是他们最终都是发送为一个POST请求给服务端，请求中包含一个JSON对象，被称作“desired capabilities”。此时，服务端就会开启一个自动化的 session，然后返回一个 session ID，session ID将会被用户发送后续的命令。
 
 **Desired Capabilities**<br/>
-Desired capabilities 是一些键值对的集合 (比如，一个 map 或者 hash），客户端将这些键值对发给服务端，告诉服务端我们想要怎么测试。比如，我们可以把`platformName` capability 设置为 `iOS`，告诉 Appium 服务端，我们想要一个iOS 的 session，而不是一个 Android 的。我们也可以设置 `safariAllowPopups` capability 为 `true`，确保在 Safari 自动化 session 中，我们可以使用 javascript 来打开新窗口。参见 [capabilities 文档](caps.cn.md)，查看完整的 capabilities 列表。
+Desired capabilities 是一些键值对的集合 (比如，一个 map 或者 hash），客户端将这些键值对发给服务端，告诉服务端我们想要怎么测试。比如，我们可以把`platformName` capability 设置为 `iOS`，告诉 Appium 服务端，我们想要一个iOS 的 session，而不是一个 Android 的。我们也可以设置 `safariAllowPopups` capability 为 `true`，确保在 Safari 自动化 session 中，我们可以使用 javascript 来打开新窗口。参见 [capabilities 文档](/docs/cn/writing-running-appium/caps.cn.md)，查看完整的 capabilities 列表。
 
 **Appium Server**<br/>
 Appium server 是用 Node.js 写的。我们可以用源码编译或者从 NPM 直接安装。
