@@ -16,8 +16,8 @@ var unorm = require('unorm');
 unorm.nfd('Adélaïde Hervé') === unorm.nfd(unorm.nfd('Adélaïde Hervé'));
 ```
 
-所以，在测试的时候对Unicode字符的处理，你需要对字符进行格式化，确保期望的值和接收到的值一致。
-有很多方法可以用来格式化，所以你要确保执行的是同样的方法！
+所以，在测试的时候对Unicode字符的处理，你需要对字符进行标准化，确保期望的值和接收到的值一致。
+有很多方法可以用来标准化，所以你要确保执行的是同样的方法！
 
 ```javascript
 // javascript
@@ -45,7 +45,7 @@ AssertionError: expected 'François Gérard' to deeply equal 'François Gérard'
 
 ### 查找器 (Finder)
 
-需要被查找的字符也应该需要格式化。比如，你在一个iOS的app上有一个叫做`Найти`的按钮，你也应该在find命令中格式化它。
+需要被查找的字符也应该需要标准化。比如，你在一个iOS的app上有一个叫做`Найти`的按钮，你也应该在find命令中标准化它。
 
 ```javascript
 // javascript
@@ -66,7 +66,7 @@ driver
 
 Appium 完全绕过键盘直接向iOS设备的输入框发送非ASCII字符。虽然这让这些文本在测试中被成功输入，但必须记住由键盘输入触发的业务逻辑将不会被测试到。
 
-像上边说的一样，断言收到的文本前应该先格式化它。
+像上边说的一样，断言收到的文本前应该先标准化它。
 
 ```javascript
 // javascript
