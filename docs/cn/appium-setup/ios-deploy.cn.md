@@ -69,4 +69,4 @@ bundle exec rake ci:fruit_deploy_app | while read line ; do
 一旦fruitstrap的进程被结束, node 服务就可以启动并且appium测试可以被执行!
 
 下一步:
-[在真机上运行appium](https://github.com/appium/appium/wiki/Running-Appium-on-Real-Devices)
+[在真机上运行appium](real-devices.cn.md)
