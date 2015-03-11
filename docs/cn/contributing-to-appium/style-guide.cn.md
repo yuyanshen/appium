@@ -34,8 +34,27 @@
 }
 ```
 
-在编辑代码时，这些定义了我们想要看到的警告类型。
-浏览 [网页](http://www.jshint.com/platforms/) ，查看编辑器和平台列表，找到使你的编辑器自动化检错的设置方法。
+因为jshint不再执行代码风格，我们也使用 [jscs](https://github.com/mdevils/node-jscs)，它其中也存在许多源代码编辑器的集成。配置文件是：
+
+```json
+{
+  "excludeFiles": ["submodules/**", "node_modules/**",
+    "./lib/server/static/**", "./lib/devices/firefoxos/atoms/*.js",
+    "./test/harmony/**/*.js", "./sample-code/examples/node/**/*-yiewd.js",
+    "./sample-code/apps/**", "./sample-code/examples/php/vendor/**"],
+  "requireCurlyBraces": ["for", "while", "do", "try", "catch"],
+  "requireSpaceAfterKeywords": ["if", "else", "for", "while", "do", "switch",
+    "return", "try", "catch", "function"],
+  "disallowMixedSpacesAndTabs": true,
+  "disallowTrailingWhitespace": true,
+  "requireSpacesInFunctionExpression": {
+    "beforeOpeningCurlyBrace": true
+  }
+}
+```
+
+你将在你喜欢的编辑器中看到这些在配置文件中定义的警告类型，查看[this page for jshint](http://www.jshint.com/platforms/) 和
+[this page for jscs](https://github.com/mdevils/node-jscs#friendly-packages)，编辑器和平台列表，找到使你的编辑器自动化检错的设置方法。
 
 ## 风格注意点
 
