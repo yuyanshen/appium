@@ -71,6 +71,7 @@
 |`autoDismissAlerts`| 当 iOS 的个人信息访问警告 (如 位置、联系人、图片) 出现时，自动选择不接受( Dismiss )。默认值 `false`。|`true` 或者 `false`|
 |`nativeInstrumentsLib`| 使用原生 intruments 库 (即关闭 instruments-without-delay ) |`true` 或者 `false`|
 |`nativeWebTap`| (Sim-only) 在Safari中允许"真实的"，非基于 javascript 的 web 点击 (tap) 。 默认值： `false`。注意：取决于 viewport 大小/比例， 点击操作不一定能精确地点中对应的元素。|`true` 或者 `false`|
+|`safariInitialUrl`| (Sim-only) (>= 8.1) 初始化 safari 的时使用的地址。默认是一个本地的欢迎页面 | 如 `https://www.github.com` |
 |`safariAllowPopups`| (Sim-only) 允许 javascript 在 Safari 中创建新窗口。默认保持模拟器当前设置。|`true` 或者 `false`|
 |`safariIgnoreFraudWarning`| (Sim-only) 阻止 Safari 显示此网站可能存在风险的警告。默认保持浏览器当前设置。|`true` 或者 `false`|
 |`safariOpenLinksInBackground`| (Sim-only) Safari 是否允许链接在新窗口打开。默认保持浏览器当前设置。|`true` 或者 `false`|
