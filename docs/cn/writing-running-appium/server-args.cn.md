@@ -82,3 +82,4 @@
 |`--intent-category`|android.intent.category.LAUNCHER|(Android-only) 用于启动 activity 的intent category|`--intent-category android.intent.category.APP_CONTACTS`|
 |`--intent-flags`|0x10200000|(Android-only) 启动 activity 的标志|`--intent-flags 0x10200000`|
 |`--intent-args`|null|(Android-only) 启动 activity 时附带额外的 intent 参数|`--intent-args 0x10200000`|
+|`--suppress-adb-kill-server`|false|(Android-only) 如果被设定，阻止Appium杀掉adb实例。||
