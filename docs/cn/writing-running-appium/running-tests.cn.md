@@ -123,7 +123,7 @@ Activities 可以通过以下方式来指定:
 
 - Mac/Linux: 'adb shell dumpsys window windows | grep mFocusedApp'
 - 在 Ruby 控制台运行: 'adb shell dumpsys window windows\`.each_line.grep(/mFocusedApp/).first.strip'
-- 在 Windows 终端运行 'adb shell dumpsys window windows' and manually look for the mFocusedApp line.
+- 在 Windows 终端运行 'adb shell dumpsys window windows' 然后去看mFocusedApp这一行的内容。
 
 然后执行你的WebDriver测试脚本，脚本必须包含下列的环境参数：
 
